@@ -31,13 +31,17 @@ Print the runner-up score.
 **Language:** Python  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-28T16:19:52.146Z  
+**Submitted:** 2026-09-28T16:26:20.577Z  
 
 ```py
 if __name__ == '__main__':
     n = int(input())
-    arr = map(int, input().split())
-    print(n)
+    arr = list(map(int, input().split()))
+    
+    unique_scores = list(set(arr))
+    unique_scores.sort()
+    
+    print(unique_scores[-2])
 
 ```
 
